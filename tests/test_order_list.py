@@ -10,3 +10,4 @@ class TestReturnOrderList:
         response = requests.get(f'{Urls.SCOOTER}{Handle.CREATE_ORDER}')
         assert response.status_code == 200
         assert "orders" in response.json()
+        
